@@ -41,9 +41,9 @@ src/
 │ └── page.tsx # Main page (renders TableManager)
 │
 ├── components/
-│ ├── TableManager.tsx # Main logic + UI
+│ ├── TableManager.tsx # Main table logic + UI
 │ ├── ManageColumnsDialog.tsx # Add / hide columns modal
-│ └── SnackbarAlert.tsx # Reusable alert/snackbar
+│ └── SnackbarAlert.tsx # Reusable alert/snackbar component
 │
 ├── store/
 │ ├── index.ts # Redux store setup
@@ -59,13 +59,7 @@ src/
 
 ---
 
-### 💡 Why This Works
-✅ Uses **triple backticks** for Markdown code block formatting  
-✅ Uses spaces and `├──` / `└──` tree-style lines for readability  
-✅ GitHub will render it **beautifully structured** and aligned  
 
-
----
 
 ## ⚙️ Getting Started
 
