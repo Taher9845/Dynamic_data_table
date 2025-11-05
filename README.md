@@ -34,7 +34,7 @@ This project enables you to create, edit, sort, search, and manage data dynamica
 ---
 
 ## 📂 Folder Structure
-
+```
 src/
 ├── app/
 │ ├── layout.tsx # Root layout (Theme + Redux Provider)
@@ -56,7 +56,7 @@ src/
 └── utils/
 └── csvUtils.ts # CSV Import/Export helper
 
-
+```
 ---
 
 
