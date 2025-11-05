@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧩 Dynamic Data Table Manager
 
-## Getting Started
+A responsive and interactive **data table manager** built with **Next.js**, **TypeScript**, **Redux Toolkit**, and **Material UI (MUI)**.  
+This project enables you to create, edit, sort, search, and manage data dynamically — including CSV import/export and a built-in light/dark mode.
 
-First, run the development server:
+---
 
-```bash
+## 🚀 Features
+
+- **Add / Edit / Delete Rows**
+- **Dynamic Column Management** — add or toggle visibility
+- **Global Search** across all fields
+- **Sortable Columns** (ASC/DESC)
+- **Pagination** (5–50 rows per page)
+- **CSV Import / Export**
+- **Persistent State** via Redux Persist
+- **Theme Toggle** — light and dark modes
+- **Responsive UI** optimized for all screen sizes
+
+
+
+## 🧠 Tech Stack
+
+| Category | Technology |
+|-----------|-------------|
+| Framework | Next.js 14 (App Router) |
+| Language | TypeScript |
+| State Management | Redux Toolkit + Redux Persist |
+| UI Library | Material UI (MUI v5+) |
+| CSV Handling | PapaParse + FileSaver.js |
+| Forms | React Hook Form |
+| Styling | MUI System (sx prop + custom theme) |
+
+---
+
+## 📂 Folder Structure
+
+src/
+├── app/
+│ ├── layout.tsx # Root layout (Theme + Redux Provider)
+│ └── page.tsx # Main page (renders TableManager)
+│
+├── components/
+│ ├── TableManager.tsx # Main logic + UI
+│ ├── ManageColumnsDialog.tsx # Add / hide columns modal
+│ └── SnackbarAlert.tsx # Reusable alert/snackbar
+│
+├── store/
+│ ├── index.ts # Redux store setup
+│ └── slices/
+│ └── tableSlice.ts # Table reducer + actions
+│
+├── theme/
+│ └── themeProvider.tsx # MUI Theme + Dark Mode toggle
+│
+└── utils/
+└── csvUtils.ts # CSV Import/Export helper
+
+
+---
+
+## ⚙️ Getting Started
+
+### 1️⃣ Clone the Repository
+
+git clone https://github.com/your-username/dynamic-data-table.git
+cd dynamic-data-table
+
+### 2️⃣ Install Dependencies
+npm install
+
+### 3️⃣ Run the Development Server
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+App will be running on http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🧭 Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Action	Description
+➕ Add Row	Opens a dialog to add a new record
+🧱 Manage Columns	Add, show, or hide columns dynamically
+🔍 Search	Filter rows instantly across all fields
+↕️ Sort	Click on column headers to sort
+📤 Export CSV	Export current data as .csv
+📥 Import CSV	Upload .csv to add new data (auto-detects new columns)
+🌗 Theme Toggle	Switch between light & dark mode
+🧾 Example CSV Format
+Name,Email,Age,Role
+John Doe,john@example.com,28,Developer
+Jane Smith,jane@example.com,32,Designer
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🧱 Future Enhancements
 
-## Learn More
+Inline cell editing
 
-To learn more about Next.js, take a look at the following resources:
+Column reordering via drag-and-drop
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Role-based user access
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Excel (.xlsx) import/export
 
-## Deploy on Vercel
+Cloud database integration
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🧑‍💻 Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Mohammed Taher
+Frontend Developer | Passionate about clean UI, TypeScript, and React.
+
+### 📫 Connect:
+GitHub: https://github.com/Taher9845
+LinkedIn: https://www.linkedin.com/in/mohammedtaher87/
+
+### 🪪 License
+
+This project is licensed under the MIT License.
+Feel free to use and modify for personal or educational purposes.
+
+⭐ Star this repository if you found it helpful!
