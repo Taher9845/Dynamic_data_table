@@ -59,6 +59,14 @@ src/
 
 ---
 
+### 💡 Why This Works
+✅ Uses **triple backticks** for Markdown code block formatting  
+✅ Uses spaces and `├──` / `└──` tree-style lines for readability  
+✅ GitHub will render it **beautifully structured** and aligned  
+
+
+---
+
 ## ⚙️ Getting Started
 
 ### 1️⃣ Clone the Repository
